@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paloma S. Ibañez - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <nav>
+        <div class="logo" onclick="scrollToSection('home')">
+            <div class="logo-icon">P</div>
+            <div class="logo-text">
+                <h2>pamibañez.</h2>
+                <p>Portfolio</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="Resume.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer" download>
+            My Resume
+        </a>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+            <li><a href="#education" onclick="closeMobileMenu()">Education</a></li>
+            <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="home">
+        <div class="container">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <p class="welcome-text"> Hello!</p>
+                    <h1 class="hero-title">I'm <span class="hero-name">Paloma S. Ibañez</span></h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typing-text" id="typingText"></span>
+                    </h2>
+                    <p class="hero-description">
+                        “I am an aspiring Business Analyst with a strong passion for web development, UI/UX design, and creating innovative digital solutions. I’m driven by the goal of turning ideas into meaningful and efficient user experiences. Let’s build something amazing together!”
+                    </p>
+                    
+                    <div class="cta-section">
+                        <a href="#projects" class="primary-btn">
+                            <span class="play-icon">▶</span>
+                            View My Projects
+                        </a>
+                        <a href="#contact" class="secondary-btn">
+                            Hire Me
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="pampam.jpg" alt="Paloma Ibanez" class="hero-pic">
+                        <div class="placeholder-avatar">
+                            <span>P</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com/pam.ibanez.946" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/p_am003/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/pamibanez018" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/Palomaibanez/portfolio" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Hi! I'm Paloma S. Ibanez, a 22-year-old aspiring Business Analyst. 
+                    I'm currently a 3rd-year Information Technology student at St. John Paul II College of Davao, 
+                    still learning and exploring this journey where technology and business come together 
+                    to solve real-world problems.
+                </p>
+                
+                <p>
+                    My interest started with a simple curiosity about how websites work, and over time, 
+                    it grew into a passion for understanding systems, improving processes, and creating 
+                    user-centered digital experiences. I specialize in front-end development and UI/UX design, 
+                    and I'm now expanding my skills toward business analysis and data-driven insights.
+                </p>
+                
+                <p>
+                    Whether it's gathering business requirements, designing intuitive interfaces, or solving 
+                    technical challenges, I approach every project with creativity, dedication, and a drive 
+                    to keep learning and improving.
+                </p>
+            </div>
+            
+            <div class="about-image">
+                <div class="about-image-wrapper">
+                    <img src="meee.png" alt="Paloma Ibanez" class="about-photo">
+                    <div class="about-placeholder">
+                        <span>P</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2>Education</h2>
+            
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>St. John Paul II College of Davao</h3>
+                        <p class="timeline-degree">Bachelor of Science in Information Technology</p>
+                        <p class="timeline-date">2023 - Present (3rd Year)</p>
+                        <p class="timeline-location">Davao Region, Philippines</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Liliw Senior High School</h3>
+                        <p class="timeline-degree">Senior High School</p>
+                        <p class="timeline-date">2019 - 2021</p>
+                        <p class="timeline-location">Liliw Laguna</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Sta. Ana National High School</h3>
+                        <p class="timeline-degree">Junior High School</p>
+                        <p class="timeline-date">2015 - 2019</p>
+                        <p class="timeline-location">R. Magsaysay Davao City</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Sta. Ana Central Elementary School</h3>
+                        <p class="timeline-degree">Elementary</p>
+                        <p class="timeline-date">2009 - 2015</p>
+                        <p class="timeline-location">R. Magsaysay Davao City</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-container">
+                <!-- Frontend Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>HTML</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>CSS</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 55%"></div>
+                                </div>
+                                <span class="skill-percentage">55%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 40%"></div>
+                                </div>
+                                <span class="skill-percentage">40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Design & UI/UX</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Figma</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 40%"></div>
+                                </div>
+                                <span class="skill-percentage">40%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>UI/UX Design</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 40%"></div>
+                                </div>
+                                <span class="skill-percentage">40%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Adobe XD</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 30%"></div>
+                                </div>
+                                <span class="skill-percentage">30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>Featured Projects</h2>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" onclick="openProjectModal('project1')">
+                <img src="myfind.png" alt="CampusFind Mobile App" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">CampusFind</h3>
+                    <p class="project-description">Mobile application designed to streamline the reporting and retrieval of lost items within school campuses.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">XML</span>
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">Android</span>
+                    </div>
+                    <button class="view-btn">View Full Project →</button>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" onclick="openProjectModal('project2')">
+                <img src="product.png" alt="E-commerce Platform" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">E-commerce Platform</h3>
+                    <p class="project-description">Modern e-commerce platform with interactive product listings and smooth checkout experience.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                    <button class="view-btn">View Full Project →</button>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" onclick="openProjectModal('project3')">
+                <img src="maternity.png" alt="Maternity Clinic Design" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Maternity Clinic UI</h3>
+                    <p class="project-description">Comprehensive maternity clinic UI kit with ready-to-use components and clear guidelines.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Figma</span>
+                        <span class="project-tag">UI/UX</span>
+                        <span class="project-tag">Design</span>
+                    </div>
+                    <button class="view-btn">View Full Project →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Project Modal - LAGAY MO TO BAGO ANG CLOSING </body> TAG -->
+<div class="project-modal" id="projectModal">
+    <div class="modal-overlay" onclick="closeProjectModal()"></div>
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeProjectModal()">✕</button>
+        
+        <!-- Project 1 Content -->
+        <div class="modal-body" id="project1" style="display: none;">
+            <img src="myfind.png" alt="CampusFind" class="modal-image">
+            <div class="modal-info">
+                <h2>CampusFind</h2>
+                <p class="modal-subtitle">Mobile Lost and Found Application</p>
+                
+                <div class="modal-tags">
+                    <span class="modal-tag">XML</span>
+                    <span class="modal-tag">Java</span>
+                    <span class="modal-tag">Android</span>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>📱 About the Project</h3>
+                    <p>CampusFind is a comprehensive mobile application designed to streamline the reporting and retrieval of lost items within school campuses. The app provides a seamless experience for both students and administrators.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>✨ Key Features</h3>
+                    <ul>
+                        <li><strong>Real-time Reporting:</strong> Instant notifications for lost and found items</li>
+                        <li><strong>Photo Upload:</strong> Visual identification with image upload capability</li>
+                        <li><strong>Smart Search:</strong> Advanced filtering by category, location, and date</li>
+                        <li><strong>Admin Dashboard:</strong> Verification system for claimed items</li>
+                        <li><strong>Secure Authentication:</strong> User account protection and privacy</li>
+                        <li><strong>Push Notifications:</strong> Real-time alerts for matching items</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>🎯 My Role</h3>
+                    <p>Lead Developer & UI/UX Designer - Responsible for full-stack development, database design, and user interface implementation.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project 2 Content -->
+        <div class="modal-body" id="project2" style="display: none;">
+            <img src="product.png" alt="E-commerce Platform" class="modal-image">
+            <div class="modal-info">
+                <h2>E-commerce Platform</h2>
+                <p class="modal-subtitle">Modern Online Shopping Experience</p>
+                
+                <div class="modal-tags">
+                    <span class="modal-tag">HTML</span>
+                    <span class="modal-tag">CSS</span>
+                    <span class="modal-tag">JavaScript</span>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>🛒 About the Project</h3>
+                    <p>A fully responsive e-commerce platform featuring modern design principles, smooth animations, and an intuitive user experience. Built with vanilla JavaScript for optimal performance.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>✨ Key Features</h3>
+                    <ul>
+                        <li><strong>Responsive Design:</strong> Seamless experience across all devices</li>
+                        <li><strong>Product Catalog:</strong> Dynamic product listings with filtering</li>
+                        <li><strong>Shopping Cart:</strong> Real-time cart updates and management</li>
+                        <li><strong>Smooth Animations:</strong> Enhanced user interactions</li>
+                        <li><strong>Contact Integration:</strong> Built-in inquiry form</li>
+                        <li><strong>Performance Optimized:</strong> Fast loading and smooth navigation</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>🎯 My Role</h3>
+                    <p>Frontend Developer - Designed and developed the entire user interface with focus on user experience and performance optimization.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project 3 Content -->
+        <div class="modal-body" id="project3" style="display: none;">
+            <img src="maternity.png" alt="Maternity Clinic UI" class="modal-image">
+            <div class="modal-info">
+                <h2>Maternity Clinic UI</h2>
+                <p class="modal-subtitle">Healthcare UI/UX Design System</p>
+                
+                <div class="modal-tags">
+                    <span class="modal-tag">Figma</span>
+                    <span class="modal-tag">UI/UX</span>
+                    <span class="modal-tag">Design</span>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>🏥 About the Project</h3>
+                    <p>A comprehensive design system for maternity clinics featuring reusable components, clear documentation, and accessibility-first approach. Designed to improve patient experience and streamline clinical workflows.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>✨ Key Features</h3>
+                    <ul>
+                        <li><strong>Component Library:</strong> Reusable UI elements for consistency</li>
+                        <li><strong>Patient Portal:</strong> Appointment booking and medical records</li>
+                        <li><strong>Accessibility Focus:</strong> WCAG 2.1 compliant design</li>
+                        <li><strong>Documentation:</strong> Clear guidelines for developers</li>
+                        <li><strong>Responsive Layouts:</strong> Mobile-first approach</li>
+                        <li><strong>Modern Interface:</strong> Clean and calming aesthetic</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>🎯 My Role</h3>
+                    <p>UI/UX Designer - Conducted user research, created wireframes, prototypes, and final high-fidelity designs with complete design documentation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out for collaborations or just a friendly hello</p>
+
+            <div class="contact-card">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>pamibanez@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">📱</div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+63 912 345 6789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">📍</div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Ecoland Talisay Davao City</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" id="senderName" placeholder="Your Name" required>
+                    <input type="email" name="email" id="senderEmail" placeholder="Your Email" required>
+                    <textarea name="message" id="senderMessage" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="success-message" id="successMessage">
+                    <span class="success-icon">✅</span>
+                    <h3>Thank You for Reaching Out!</h3>
+                    <p id="feedbackMessage"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Paloma S. Ibanez. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/pam.ibanez.946" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/p_am003/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/pamibanez018" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/Palomaibanez/portfolio" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+        <svg viewBox="0 0 24 24">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
